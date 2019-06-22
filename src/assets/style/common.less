@@ -1,0 +1,403 @@
+body {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+html
+{
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+/**
+ * 修改element的基本样式
+ */
+/* 导航组件展开后宽度会出现的问题 */
+// #nav.el-menu { 
+//   width: 200px;
+// }
+div{
+  box-sizing:border-box;
+}
+
+
+/**
+ * 主题button
+ */
+.sys-Btn{
+  border: none;
+  background-color: #54B3D9;
+  font-weight: normal;
+  font-size: 1.333333rem;
+}
+.smini-button{
+  height: 20px;
+  padding: 0 5px;
+  line-height: 19px;
+  border-radius: 4px;
+  font-size: 12px !important;
+}
+// @media 
+
+
+/**
+ * 基础组件view样式
+ */
+.view-container {
+    position: relative;
+    .view-title {
+      margin: 0;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-bottom: 1px solid #efefef; 
+    }
+    .view-body {
+      min-height: calc( 100vh - 195px);
+      padding: 10px;
+    }
+    .view-footer {
+      .el-pagination {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-end;
+      }
+    }
+  }
+  /**
+   * 快捷类 样式
+   */
+  .fill-width {
+    width: 100%;
+  }
+
+  /**
+   * 文本不同颜色 样式
+   */
+   .primary-text{
+     color: #409EFF;
+   }
+   .success-text{
+     color: #67C23A;
+   }
+   .warning-text{
+     color:#E6A23C;
+   }
+   .danger-text{
+     color: #F56C6C;
+   }
+   .info-text{
+     color: #909399;
+   }
+
+.contain-head{
+    display: flex;
+    margin-bottom: 2vh;
+    .head-title{
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333333;
+    } 
+    .contain-head-l{
+        display: flex;
+        align-items: center;
+    }
+}
+.contain-middle-head{
+  width: 100%;
+  height: 5rem;
+
+  background-color: #fff;
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  color: @plateformTheme;
+  .head-subtitle,.todayStatic{
+    font-weight: bold;
+    font-size: 0.85rem;
+ }
+    
+}
+.main-container{
+  padding: 1.6667rem !important;
+  background-color: #EBEFF2;
+  .contain-head{
+      display: flex;
+      align-items: center;
+     .head-pre{
+         width: 0.4vw;
+         height: 3vh;
+         margin-right: .625rem;
+     }
+
+  }
+  .introWrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.666667rem;
+    color: #333333;
+    .el-icon-message-solid{
+      color: #666666;
+      font-size: 1.666667rem;
+      margin-right: .666667rem;
+  }
+  .intro-message{
+      margin-right: 10px;
+  }
+  .el-button{
+      font-weight: normal;
+      font-size: 1.333333rem;
+  }
+  }
+}
+.statistic-Color-Block{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.125rem;
+  
+   &:last-child{
+       margin-right: 0;
+   }
+
+   .item-bkg{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       left: 0;
+       top: 0;
+       z-index: 0;
+   }
+}
+.sys-Btn:focus{
+  border: none;
+}
+.contain-footer{
+    padding: 15px 20px;
+    max-width: 100%;
+    margin-top: 2vh;
+    background: #fff;
+}
+
+  .contain-footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    .contain-footer-topl{
+        display: flex;
+        .date-option {
+            cursor: pointer;
+            width: 8.33rem;
+            height: 3.33rem;
+            margin-right: -1px;
+            text-align: center;
+            line-height: 3.33rem;
+            color: #B3B3B3;
+            font-size: 1.17rem;
+        }
+        .choose
+        {
+            color: #FFFFFF;
+        }
+    }
+    .contain-footer-topr{
+        display: flex;
+        align-items: center;
+        .date-picker{
+          margin-right: 2.5rem;
+        }
+        .searchTool{
+            margin-right: 1.25rem;
+            width: 10vw;
+        }
+        .dowload-Btn{
+          border: none;                
+        }
+    }
+}
+.contain-footer-bottom{
+  max-width: 100%;
+}
+@media only screen and (max-width: 1400px)
+{
+  .sys-defalut-Btn{
+    width: auto;
+    height: 28px;
+    padding: 5px 6px;
+    font-size: 12px !important;
+  }
+  .contain-footer-top {
+    
+    .contain-footer-topl{
+      display: flex;
+      height: 100%;
+      .date-option {
+          cursor: pointer;
+          width: 6rem;
+          height: 100%;
+          margin-right: -1px;
+          font-size: 1rem;
+      }
+      .choose
+      {
+          color: #FFFFFF;
+      }
+  }
+  .contain-footer-topr{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    .date-picker{
+        width: 22rem;
+        .el-range-input{
+          font-size: 1rem !important;
+        }
+    }
+    .el-select{
+      width: 10rem !important;
+      .el-input{
+        font-size: 1rem !important;
+      }
+      
+    }
+    .searchTool{
+        margin-right: 1.25rem;
+        width: 180px;
+        
+        .el-input__inner{
+          font-size: 1rem;
+        }
+    }
+    .dowload-Btn{
+      border: none;                
+    }
+}
+
+  }
+}
+.el-pagination
+{
+    
+    float: right;
+    margin-top: 4vh;
+    padding: 0;
+    button{
+        font-size: .9375rem;
+    }
+    .btn-next
+    {
+        margin-right: 0 !important;
+    }
+    .btn-prev
+    {
+        margin-left: 0 !important;
+    }
+    .el-pager {
+        li{
+        font-size:  .5rem;
+        }
+    }
+}
+.dialog{
+  .el-dialog{
+     min-width: 575px;
+    .el-dialog__header{
+      border-bottom: 1px solid #F4F4F4;
+      }
+      .el-dialog__body{
+        padding: 30px 51px 0 51px;
+        .el-form-item{
+          margin-bottom: 19px;
+        }
+        .el-form-item:last-child
+        {
+          margin-bottom: 0;
+        }
+      }
+      .el-dialog__title{
+          font-size: 1.1667rem;
+      }
+      .el-dialog__footer{
+        padding-right: 51px;
+      }
+  }
+
+
+
+} 
+.el-tabs{
+  .el-tabs__item{
+    color: #666666;
+    background-color: #E6E6E6;
+  }
+  .is-active{
+    background-color: #fff;
+  }
+}
+
+.el-textarea{
+  .el-textarea__inner{
+    resize: none;
+  }
+
+}
+//文字按钮 激活和未激活样式
+.activeBtn{
+  color: #6BCC03;
+
+}
+.no-activeBtn{
+  color: #f00;
+}
+/**
+ * 表格 样式
+ */
+ .el-table{
+   font-size: 1rem;
+ }
+
+
+ .footerbottom-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.67rem;
+  .pagination{
+  margin-top: 0;
+  float: none;
+  }
+  .total-title{
+    color: #333;
+    font-size: 1rem;
+     .total-count{
+       color: #F56C6C;
+     }
+  }
+} 
+
+  /**
+   * 主题颜色 样式
+   */
+@plateformTheme: #54B3D9;
+@contractorTheme: #9967CA;
+@businessTheme:    #F5A623;
+@import url('./theme.less');
+.themea{
+  .theme();//默认样式
+}
+.themeb{
+  .theme(@contractorTheme, #fff);
+}
+.themec{
+  .theme(@businessTheme, #fff);
+}
+
+.awardCode-Btn-run{
+  background-color: #CCCCCC !important;
+}

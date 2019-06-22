@@ -1,0 +1,183 @@
+.theme(@backcolor: #54B3D9, @color:#fff){
+    .el-header{
+        #logoTitle{
+            color: @backcolor;
+        }
+    }
+    .introWrap{
+        .el-button{
+            color: @backcolor;
+        }
+    }
+    /*
+    **系统主题按钮和文本
+    */
+    //普通按钮
+    .sys-Btn{
+        background-color: @backcolor;
+        border-color: @backcolor;
+        color: #fff;
+    }
+    //文本按钮
+    .sys-text-Btn{
+        color: @backcolor;
+
+    }
+    //文本
+    .sys-text{
+        color: @backcolor;
+    }
+    //边框按钮
+    .sys-border-Btn{
+        background-color: #fff;
+        border-color: @backcolor;
+        color: @backcolor;
+
+    }
+    /*
+    **主题边框DIV
+    */
+    .top-intro-area{
+        height: 4.7rem;
+        padding: 0 1.416667rem;
+        border: 1px dashed @backcolor;
+        margin-bottom: 20px;
+        line-height: 4.75rem;
+        .top-intro-text{
+            font-size: 1.1667rem;
+            color: @backcolor;
+        }
+    }    
+    .sys-Btn:focus{
+        border: none;
+        background-color: @backcolor;
+      }
+      .sys-Btn:hover{
+         background-color: @backcolor;
+      }
+      .el-tabs{
+        .is-active{
+          color: @backcolor;
+        }
+      }  
+      .contain-head{
+        .head-subtitle{
+            color: @backcolor;
+        }
+        .todayStatic{
+            color: @backcolor;
+        }
+        .head-subtitle{
+            color: @backcolor;
+        }
+    }
+    .main-container{
+        .contain-head{
+           .head-pre{
+               background: @backcolor
+           }
+      
+        }
+    }
+    .contain-footer-top{
+        .contain-footer-topl{
+
+            .date-option {
+                border: 1px solid @backcolor;
+            }
+            .choose
+            {
+                background-color: @backcolor;       
+            }
+        }
+        .contain-footer-topr{
+            .dowload-Btn{               
+              background-color:@backcolor;
+            }
+        }
+    }
+
+    /*
+    **步骤条样式
+    */
+    .order-detail-step{
+        .el-step{
+            .el-step__head{
+                margin-bottom: .8333rem;
+                .is-finish{
+                    color: @backcolor;
+                    
+                }
+
+            }
+            .el-step__main {
+                .el-step__title{
+                    font-size: 1.3333rem;
+                }
+                .el-step__description{
+                    color: #B3B3B3;
+                    font-size: 1.1667rem;
+                }
+            }
+            .is-finish{
+                color: @backcolor;
+                border-color: @backcolor;
+            }
+            
+        }
+
+    } 
+    
+    /*
+    **分页样式
+    */
+    .el-pagination
+    {
+        .el-pager {
+            .active{
+            background-color: @backcolor !important;
+            font-size: .5rem;
+            }
+            li:hover{
+                color: @backcolor !important;
+            }
+            .active:hover{
+                color: #fff !important;
+            }
+        }
+    }
+    /*
+    **侧边栏样式
+    */ 
+    .el-menu-item:focus{
+        color: @backcolor !important;  
+    }
+    .el-menu-item.is-active{
+        color: @backcolor !important;  
+    }
+
+    /*
+    **多选按钮样式
+    */    
+    .el-radio-group{
+        .is-checked {
+            .el-radio__inner{
+                background-color: @backcolor;
+                border-color: @backcolor;
+            }
+            
+            .el-radio__label{
+                color: @backcolor !important;
+            }
+
+        }
+    }
+    .account-item-value{
+            color: @backcolor;
+        }
+        
+    #info-remind{
+        color: @backcolor;
+    }         
+    
+}
